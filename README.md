@@ -3,7 +3,7 @@ Oomph profile
 
 ## Setup profiles
 
-* https://github.com/velizarn/oomph/blob/master/setups/DemandwareDevConfig.setup
+* https://raw.githubusercontent.com/velizarn/oomph/master/setups/DemandwareDevConfig.setup
 
 ## Resources
 
