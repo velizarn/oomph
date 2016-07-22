@@ -19,12 +19,3 @@ Oomph profile
 ## License
 
 The content of this project itself is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
-
-<script>
-var links = document.querySelectorAll( '.entry-content a' );
-for (var i = 0, length = links.length; i < length; i++) {
-    if (links[i].hostname != window.location.hostname) {
-        links[i].target = '_blank';
-    }
-}
-</script>
