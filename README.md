@@ -7,16 +7,24 @@ Oomph profile
 
 ## Resources
 
-* <a href="https://projects.eclipse.org/projects/tools.oomph" target="_blank">Oomph project</a>
-* <a href="http://wiki.eclipse.org/Eclipse_Oomph_Installer" target="_blank">Eclipse Installer</a>
-* <a href="http://wiki.eclipse.org/Eclipse_Oomph_Authoring" target="_blank">Oomph Authoring Guide</a>
-* <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=287" target="_blank">Eclipse Community Forums - Oomph</a>
-* <a href="https://github.com/joergreichert/oomph-catalogue" target="_blank">Oomph with many examples</a>
-* <a href="http://www.eclipse.org/downloads/eclipse-packages/" target="_blank">Eclipse Downloads</a>
-* <a href="http://www.eclipse.org/neon/noteworthy/" target="_blank">Eclipse Neon New and Noteworthy</a>
-* <a href="http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/" target="_blank">EclipseSource Oomph profile</a>
-
+* [Oomph project](https://projects.eclipse.org/projects/tools.oomph)
+* [Eclipse Installer](http://wiki.eclipse.org/Eclipse_Oomph_Installer)
+* [Oomph Authoring Guide](http://wiki.eclipse.org/Eclipse_Oomph_Authoring)
+* [Eclipse Downloads](http://www.eclipse.org/downloads/eclipse-packages/)
+* [Eclipse Community Forums - Oomph](http://www.eclipse.org/forums/index.php?t=thread&frm_id=287)
+* [Oomph with many examples](https://github.com/joergreichert/oomph-catalogue)
+* [Eclipse Neon New and Noteworthy](http://www.eclipse.org/neon/noteworthy/)
+* [EclipseSource Oomph profile](http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/)
 
 ## License
 
-The content of this project itself is licensed under the <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT license</a>.
+The content of this project itself is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
+
+<script>
+var links = document.querySelectorAll( '.entry-content a' );
+for (var i = 0, length = links.length; i < length; i++) {
+    if (links[i].hostname != window.location.hostname) {
+        links[i].target = '_blank';
+    }
+}
+</script>
