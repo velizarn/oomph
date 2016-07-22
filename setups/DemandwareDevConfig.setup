@@ -284,20 +284,16 @@
       xsi:type="setup:PreferenceTask"
       key="/instance/org.eclipse.ui/defaultPerspectiveId"
       value="com.demandware.studio.cartridgePerspective"/>
-
   <setupTask
-	      xsi:type="setup:VariableTask"
-	      name="eclipse.target.platform"
-	      defaultValue="Neon"
-	      storageURI="scope://Workspace"/>
-
+      xsi:type="setup:VariableTask"
+      name="eclipse.target.platform"
+      value=""
+      defaultValue="Neon"
+      storageURI="scope://Workspace"/>
   <stream name="master"
       label="Master"/>
-
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
-
   <description>Demandware developer setup for Eclipse IDE.</description>
-
 </setup:Project>
