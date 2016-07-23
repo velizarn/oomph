@@ -15,6 +15,8 @@ Oomph profile
 * [Oomph with many examples](https://github.com/joergreichert/oomph-catalogue)
 * [Eclipse Neon New and Noteworthy](http://www.eclipse.org/neon/noteworthy/)
 * [EclipseSource Oomph profile](http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/)
+* [Oomph 01: A look at the eclipse installer](http://codeandme.blogspot.bg/2016/07/oomph-01-look-at-eclipse-installer.html)
+* [Install Eclipse Projects with a lot more Oomph](https://www.infoq.com/news/2015/03/eclipse-oomph)
 
 ## License
 
