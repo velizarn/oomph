@@ -4,6 +4,7 @@ Oomph profile
 ## Setup profiles
 
 * https://raw.githubusercontent.com/velizarn/oomph/master/setups/DemandwareDevConfig.setup
+* https://raw.githubusercontent.com/velizarn/oomph/master/setups/EmptyProject.setup
 
 ## Resources
 
