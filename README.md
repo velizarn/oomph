@@ -19,6 +19,10 @@ Oomph profile
 * [Oomph 01: A look at the eclipse installer](http://codeandme.blogspot.bg/2016/07/oomph-01-look-at-eclipse-installer.html)
 * [Install Eclipse Projects with a lot more Oomph](https://www.infoq.com/news/2015/03/eclipse-oomph)
 
+## Wiki
+
+https://github.com/velizarn/oomph/wiki
+
 ## License
 
 The content of this project itself is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).

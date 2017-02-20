@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    name="oomph.git"
+    label="Eclipse Ini">
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      id="eclipse.ini.vm.arguments"
+      name="VM arguments">
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-server"
+        value=""
+        vm="true">
+      <description></description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Duser.country"
+        value="=US"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Duser.language"
+        value="=en"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Dfile.encoding"
+        value="=UTF-8"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Xverify"
+        value=":none"
+        vm="true">
+      <description>
+        This option disables the class file validation while loading.
+        This can be a real performance boost if you have a large project with many .class files.
+      </description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Declipse.p2.MD5Check"
+        value="=false"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:+UseG1GC"
+        value=""
+        vm="true">
+      <description>Use the Garbage First (G1) Collector</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:+AggressiveOpts"
+        value=""
+        vm="true">
+      <description>Turn on point performance compiler optimizations that are expected to be default in upcoming releases. (Introduced in 5.0 update 6.)</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:+UseFastAccessorMethods"
+        value=""
+        vm="true">
+      <description>Use optimized versions of Get&lt;Primitive>Field.</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:+UseCompressedOops"
+        value=""
+        vm="true">
+      <description>Enables the use of compressed pointers (object references represented as 32 bit offsets instead of 64-bit pointers) for optimized 64-bit performance with Java heap sizes less than 32gb.</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:+UseCodeCacheFlushing"
+        value=""
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:+DoEscapeAnalysis"
+        value=""
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:CompileThreshold"
+        value="=100"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:-DontCompileHugeMethods"
+        value=""
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-XX:MaxPermSize"
+        value="=1024m"
+        vm="true">
+      <description>Deprecated in Java 8</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Declipse.p2.unsignedPolicy"
+        value="=allow"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Djava.awt.headless"
+        value="=true"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Djava.awt.nativeDoubleBuffering"
+        value="=true"
+        vm="true"/>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Xms"
+        value="512m"
+        vm="true">
+      <description>Sets the initial allocation of heap memory</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        option="-Xmx"
+        value="4096m"
+        vm="true">
+      <description>Set the heap space needed to work with the projects of ${scope.project.label}</description>
+    </setupTask>
+  </setupTask>
+  <setupTask
+      xsi:type="setup:CompoundTask"
+      id="eclipse.ini.text.modify"
+      name="Modify .ini file">
+    <setupTask
+        xsi:type="setup:TextModifyTask"
+        id="pre.add.clean.mode"
+        url="${installation.location|uri}/${installation.relativeProductFolder}/eclipse.ini"
+        encoding="UTF-8">
+      <modification
+          pattern="(\-clean\r\n\-cssTheme\r\nnone\r\n\-startup)">
+        <substitution>-startup</substitution>
+      </modification>
+      <description></description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:TextModifyTask"
+        id="add.clean.mode"
+        url="${installation.location|uri}/${installation.relativeProductFolder}/eclipse.ini"
+        encoding="UTF-8">
+      <modification
+          pattern="(\-startup)">
+        <substitution>-clean&#xD;
+-cssTheme&#xD;
+none&#xD;
+-startup</substitution>
+      </modification>
+      <description></description>
+    </setupTask>
+    <description>Configure some core command line arguments - clean, cssTheme, perspective, etc.</description>
+  </setupTask>
+  <stream name="master"
+      label="Master"/>
+  <logicalProjectContainer
+      xsi:type="setup:ProjectCatalog"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+  <description>Eclipse INI JVM arguments</description>
+</setup:Project>

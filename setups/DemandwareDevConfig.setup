@@ -40,7 +40,7 @@
     <repository
         url="http://eclipsenotepad.sourceforge.net/updates/"/>
     <repository
-        url="http://updates.demandware.com/uxstudio_ea/4.5/"/>
+        url="http://updates.demandware.com/uxstudio_ea/4.6/"/>
     <repository
         url="http://andrei.gmxhome.de/eclipse/"/>
     <repository
@@ -158,7 +158,7 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         option="-Xmx"
-        value="2048m"
+        value="4096m"
         vm="true">
       <description>Set the heap space needed to work with the projects of ${scope.project.label}</description>
     </setupTask>
