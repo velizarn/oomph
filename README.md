@@ -4,7 +4,12 @@ Oomph profile
 ## Setup profiles
 
 * https://raw.githubusercontent.com/velizarn/oomph/master/setups/DemandwareDevConfig.setup
+* https://raw.githubusercontent.com/velizarn/oomph/master/setups/EclipseIni.setup
 * https://raw.githubusercontent.com/velizarn/oomph/master/setups/EmptyProject.setup
+
+## Wiki
+
+https://github.com/velizarn/oomph/wiki
 
 ## Resources
 
@@ -15,13 +20,10 @@ Oomph profile
 * [Eclipse Community Forums - Oomph](http://www.eclipse.org/forums/index.php?t=thread&frm_id=287)
 * [Oomph with many examples](https://github.com/joergreichert/oomph-catalogue)
 * [Eclipse Neon New and Noteworthy](http://www.eclipse.org/neon/noteworthy/)
+* [Eclipse Mars New and Noteworthy](http://www.eclipse.org/mars/noteworthy/)
 * [EclipseSource Oomph profile](http://eclipsesource.com/blogs/2015/08/17/introducing-the-eclipsesource-oomph-profile/)
 * [Oomph 01: A look at the eclipse installer](http://codeandme.blogspot.bg/2016/07/oomph-01-look-at-eclipse-installer.html)
 * [Install Eclipse Projects with a lot more Oomph](https://www.infoq.com/news/2015/03/eclipse-oomph)
-
-## Wiki
-
-https://github.com/velizarn/oomph/wiki
 
 ## License
 
