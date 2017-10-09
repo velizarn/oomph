@@ -35,6 +35,10 @@
         name="com.ess.regexutil.feature.group"/>
     <requirement
         name="org.eclipse.egit.gitflow.feature.feature.group"/>
+    <requirement
+        name="com.codeaffine.gonsole.feature.feature.group"/>
+    <requirement
+        name="com.codeaffine.gonsole.egit.feature.feature.group"/>
     <repository
         url="http://psnet.nu/eclipse/updates"/>
     <repository
@@ -51,6 +55,8 @@
         url="http://veger.github.io/eclipse-gef-imageexport/"/>
     <repository
         url="http://regex-util.sourceforge.net/update/"/>
+    <repository
+        url="http://rherrmann.github.io/gonsole/repository/"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -58,6 +64,7 @@
       name="Eclipse Ini">
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-server"
         value=""
         vm="true">
@@ -65,91 +72,109 @@
     </setupTask>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Duser.country"
         value="=US"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Duser.language"
         value="=en"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Dfile.encoding"
         value="=UTF-8"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Xverify"
         value=":none"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Declipse.p2.MD5Check"
         value="=false"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:+UseG1GC"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:+AggressiveOpts"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:+UseFastAccessorMethods"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:+UseCompressedOops"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:+UseCodeCacheFlushing"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:+DoEscapeAnalysis"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:CompileThreshold"
         value="=100"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:-DontCompileHugeMethods"
         value=""
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-XX:MaxPermSize"
         value="=1024m"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Declipse.p2.unsignedPolicy"
         value="=allow"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Djava.awt.headless"
         value="=true"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP MANUAL"
         option="-Djava.awt.nativeDoubleBuffering"
         value="=true"
         vm="true"/>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP"
         option="-Xms"
         value="512m"
         vm="true">
@@ -157,6 +182,7 @@
     </setupTask>
     <setupTask
         xsi:type="setup:EclipseIniTask"
+        excludedTriggers="STARTUP"
         option="-Xmx"
         value="4096m"
         vm="true">
