@@ -139,6 +139,7 @@
     <setupTask
         xsi:type="setup:TextModifyTask"
         id="pre.add.clean.mode"
+        excludedTriggers="STARTUP MANUAL"
         url="${installation.location|uri}/${installation.relativeProductFolder}/eclipse.ini"
         encoding="UTF-8">
       <modification
@@ -150,6 +151,7 @@
     <setupTask
         xsi:type="setup:TextModifyTask"
         id="add.clean.mode"
+        excludedTriggers="STARTUP MANUAL"
         url="${installation.location|uri}/${installation.relativeProductFolder}/eclipse.ini"
         encoding="UTF-8">
       <modification
